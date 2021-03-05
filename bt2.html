@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form dang ky hoc vien</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 600px;
+            background-color: khaki;
+            font-family: 'Tahoma';
+            font-size: 30px;
+            line-height: 50px;
+            margin: auto;
+        }
+
+        .header {
+            margin: 20px 20px;
+            background-color: mediumaquamarine;
+            color: blue;
+        }
+
+        .content {
+
+
+        }
+
+        .content-left {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .content-right {
+            float:  left;
+            width: 40%;
+            height: 100%;
+            margin-left: 50px;
+        }
+        button {
+            background-color: lightgray;
+            font-size: 30px;
+        }
+
+        input {
+            font-size: 30px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="header">
+                <h3>ĐĂNG KÝ HỌC VIÊN</h3>
+            </div>
+            <div class="content-left">
+                Họ và tên
+                <br/>
+                Ngày sinh
+                <br/>
+                Giới tính
+                <br/>
+                Địa chỉ
+                </br>
+                </br>
+                Lớp
+                </br>
+                Email
+                </br>
+                Điện thoại
+            </div>
+            <div class="content-right">
+                <input type="text">
+                </br>
+                <input type="text">
+                </br>
+                <input type="radio" name="gioitinh">Nam <input type="radio" name="gioitinh"> Nữ
+                </br>
+                <textarea rows="6" cols="20"></textarea>
+                </br>
+                <select>
+                    <option>--Chọn lớp--</option>
+                </select>
+                </br>
+                <input type="text">
+                </br>
+                <input type="text">
+                </br>
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

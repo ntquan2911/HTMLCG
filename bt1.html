@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đơn giản</title>
+    <style>
+        .container {
+            background-color: lightcyan;
+            height: 500px;
+            width: 900px;
+            border: 2px solid black;
+            margin: auto;
+        }
+
+        .content {
+            height: 460px ;
+            background-color: white;
+            margin: 20px;
+            border: 2px solid black;
+            font-family: Tahoma;
+            font-size: 30px;
+            line-height: 200%;
+        }
+
+        .header {
+            text-align: center;
+            height: 50px;
+            background-color: orangered;
+            color: white;
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        .left {
+            float: left;
+            width: 200px;
+            border: 1px solid black;
+            text-align: right;
+            color: blue;
+        }
+        .right {
+            float: right;
+            width: 630px;
+            border: 1px solid black;
+            color: orangered;
+        }
+
+        .div3 {
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .right-col1 {
+            width: 160px;
+            border: 1px solid black;
+        }
+        .right-col2 {
+            width: 160px;
+            border: 1px solid black;
+        }
+        .right-col3 {
+            width: 160px;
+            border: 1px solid black;
+        }
+
+        button {
+            background-color: lightgray;
+            font-size: 30px;
+        }
+
+        input {
+            background-color: white;
+            font-size: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="content">
+                <div class="header">
+                    SỞ THÍCH CỦA BẠN
+                </div>
+                <div class="left">
+                    Họ và tên
+                    </br>
+                    Email
+                    </br>
+                    Sở thích
+                    </br>
+                </div>
+                <div class="right">
+                    <input type="text" name="yourname" size="30">
+                    </br>
+                    <input type="text" name="email" size="30">
+                    <div class="div3">
+                        <div class="right-col1">
+                            <input type="checkbox" name="hobby">Thể thao
+                            <input type="checkbox" name="hobby">Lướt web
+                            <input type="checkbox" name="hobby">Du lịch
+                        </div>
+                        <div class="right-col2">
+                            <input type="checkbox" name="hobby">Âm nhạc
+                            <input type="checkbox" name="hobby">Chơi game
+                        </div>
+                        <div class="right-col3">
+                            <input type="checkbox" name="hobby">Đọc sách
+                            <input type="checkbox" name="hobby">Điện ảnh
+                        </div>
+                    </div>
+                    <button type="submit" name="submitform" >Gửi thông tin</button>
+                    <button type="reset" name="resetform">Nhập lại</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
